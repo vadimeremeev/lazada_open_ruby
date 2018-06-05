@@ -141,6 +141,8 @@ module LazopApiClient
                 end
             end
 
+            $logger.error(">>>> #{url.to_yaml} #{all_params.to_yaml}")
+            puts ">>>> #{url.to_yaml} #{all_params.to_yaml}"
             res = JSON.parse(RestClient.post(url,all_params))
             return res
         end

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem install rest-client
+gem "rest-client"
 
-gem install openssl
+gem "openssl"
 
 gemspec
